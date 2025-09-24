@@ -7,7 +7,11 @@ configDotenv()
 const app = express();
 const Port = process.env.PORT;
 
-app.use(cors());
+app.use(cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true
+}));
+
 app.use(express.json());
 
 // Static folder to serve converted files
