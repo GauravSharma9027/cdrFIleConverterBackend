@@ -21,5 +21,5 @@ app.use("/converted", express.static(path.join(process.cwd(), "converted")));
 app.use("/api/convert", convertRoutes);
 
 app.listen(Port, () => {
-    console.log(`Server running on http://localhost:${Port}`);
+    console.log(`✅Server running on http://localhost:${Port}`);
 });
