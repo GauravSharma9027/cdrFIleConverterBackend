@@ -8,7 +8,7 @@ const app = express();
 const Port = process.env.PORT;
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: [process.env.FRONTEND_URL, process.env.FRONTEND_URL_VERCEL],
     credentials: true
 }));
 
