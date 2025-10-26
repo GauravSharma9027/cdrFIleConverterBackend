@@ -9,7 +9,7 @@ const Port = process.env.PORT;
 
 app.use(cors({
     // origin: [process.env.FRONTEND_URL, process.env.FRONTEND_URL_VERCEL],
-    origin: "https://cdrconverterfrontend.netlify.app",
+    origin: process.env.FRONTEND_URL,
     credentials: true
 }));
 
