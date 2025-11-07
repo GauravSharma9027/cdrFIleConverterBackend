@@ -9,8 +9,8 @@ const Port = process.env.PORT;
 
 app.use(cors({
     // origin: [process.env.FRONTEND_URL, process.env.FRONTEND_URL_VERCEL],
-    // origin:"http://localhost:5173",
-    origin: ["https://cdrconverter.com", "https://www.cdrconverter.com"],
+    origin:"https://cdrconverter.com",
+    // origin: ["https://cdrconverter.com", "https://www.cdrconverter.com"],
     credentials: true
 }));
 
